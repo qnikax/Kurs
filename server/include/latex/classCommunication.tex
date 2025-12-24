@@ -1,0 +1,79 @@
+\hypertarget{classCommunication}{}\doxysection{Класс Communication}
+\label{classCommunication}\index{Communication@{Communication}}
+
+
+Класс \mbox{\hyperlink{classCommunication}{Communication}}.  
+
+
+
+
+{\ttfamily \#include $<$Communication.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCommunication_ad5015515bde199711daa0cf2923d129a}{create\+Socket}} (int port)
+\begin{DoxyCompactList}\small\item\em Создает сокет на указанном порту. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCommunication_acb21030851cef1b43ac8f33ed2852557}{wait\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Ожидает подключения клиента и принимает его \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCommunication_ada7b0f634f29aa2c64a97726c21f9b02}{autorize}} (int client\+Socket, \mbox{\hyperlink{classUsersParser}{Users\+Parser}} users)
+\begin{DoxyCompactList}\small\item\em Авторизует клиента, сравнивая его учетные данные с информацией пользователя. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \mbox{\hyperlink{classCommunication}{Communication}}. 
+
+Класс \mbox{\hyperlink{classCommunication}{Communication}} отвечает за связь между клиентами и сервером. \begin{DoxyWarning}{Предупреждения}
+Реализация только для типа данных int16\+\_\+t 
+\end{DoxyWarning}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classCommunication_ada7b0f634f29aa2c64a97726c21f9b02}\label{classCommunication_ada7b0f634f29aa2c64a97726c21f9b02}} 
+\index{Communication@{Communication}!autorize@{autorize}}
+\index{autorize@{autorize}!Communication@{Communication}}
+\doxysubsubsection{\texorpdfstring{autorize()}{autorize()}}
+{\footnotesize\ttfamily void Communication\+::autorize (\begin{DoxyParamCaption}\item[{int}]{client\+Socket,  }\item[{\mbox{\hyperlink{classUsersParser}{Users\+Parser}}}]{users }\end{DoxyParamCaption})}
+
+
+
+Авторизует клиента, сравнивая его учетные данные с информацией пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em client\+Socket} & Дескриптор сокета клиента. @paramusers Экземпляр класса \mbox{\hyperlink{classUsersParser}{Users\+Parser}}, хранящий информацию о пользователях. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCommunication_ad5015515bde199711daa0cf2923d129a}\label{classCommunication_ad5015515bde199711daa0cf2923d129a}} 
+\index{Communication@{Communication}!createSocket@{createSocket}}
+\index{createSocket@{createSocket}!Communication@{Communication}}
+\doxysubsubsection{\texorpdfstring{createSocket()}{createSocket()}}
+{\footnotesize\ttfamily void Communication\+::create\+Socket (\begin{DoxyParamCaption}\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+Создает сокет на указанном порту. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em port} & Номер порта, на котором будет создан сокет. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCommunication_acb21030851cef1b43ac8f33ed2852557}\label{classCommunication_acb21030851cef1b43ac8f33ed2852557}} 
+\index{Communication@{Communication}!waitClient@{waitClient}}
+\index{waitClient@{waitClient}!Communication@{Communication}}
+\doxysubsubsection{\texorpdfstring{waitClient()}{waitClient()}}
+{\footnotesize\ttfamily int Communication\+::wait\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ожидает подключения клиента и принимает его 
+
+\begin{DoxyReturn}{Возвращает}
+Дескриптор клиентского сокета. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Communication_8h}{Communication.\+h}}\end{DoxyCompactItemize}

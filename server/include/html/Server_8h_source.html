@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NoKurs: Исходный файл Server.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">NoKurs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Server.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Server_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __SERVER_H__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __SERVER_H__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ServerError_8h.html">ServerError.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CmdLine_8h.html">CmdLine.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Logger_8h.html">Logger.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Communication_8h.html">Communication.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="UsersParser_8h.html">UsersParser.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classServer.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classServer.html">Server</a>{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classServer.html#a004b97c34918dc536d4631671da9817e">   33</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classServer.html#a004b97c34918dc536d4631671da9817e">Initialize</a>(<span class="keywordtype">int</span> argc,<span class="keywordtype">char</span>** argv);</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classServer.html#a7eac07d2582fa01c2671362efa955b31">   37</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classServer.html#a7eac07d2582fa01c2671362efa955b31">start</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> executeCalculations(<span class="keywordtype">int</span> client);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classCmdLine.html">CmdLine</a> m_cmd;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classUsersParser.html">UsersParser</a> m_usersParser;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classCommunication.html">Communication</a> m_com;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">bool</span> m_mustDie = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __SERVER_H__</span></div>
+<div class="ttc" id="aCmdLine_8h_html"><div class="ttname"><a href="CmdLine_8h.html">CmdLine.h</a></div><div class="ttdoc">Заголовочный файл для модуля CmdLine.</div></div>
+<div class="ttc" id="aCommunication_8h_html"><div class="ttname"><a href="Communication_8h.html">Communication.h</a></div><div class="ttdoc">Заголовочный файл для модуля Communication.</div></div>
+<div class="ttc" id="aLogger_8h_html"><div class="ttname"><a href="Logger_8h.html">Logger.h</a></div><div class="ttdoc">Заголовочный файл для модуля Logger.</div></div>
+<div class="ttc" id="aServerError_8h_html"><div class="ttname"><a href="ServerError_8h.html">ServerError.h</a></div><div class="ttdoc">Заголовочный файл для модуля ServerError.</div></div>
+<div class="ttc" id="aUsersParser_8h_html"><div class="ttname"><a href="UsersParser_8h.html">UsersParser.h</a></div><div class="ttdoc">Заголовочный файл для модуля UsersParser.</div></div>
+<div class="ttc" id="aclassCmdLine_html"><div class="ttname"><a href="classCmdLine.html">CmdLine</a></div><div class="ttdef"><b>Definition:</b> CmdLine.h:33</div></div>
+<div class="ttc" id="aclassCommunication_html"><div class="ttname"><a href="classCommunication.html">Communication</a></div><div class="ttdoc">Класс Communication.</div><div class="ttdef"><b>Definition:</b> Communication.h:20</div></div>
+<div class="ttc" id="aclassServer_html"><div class="ttname"><a href="classServer.html">Server</a></div><div class="ttdoc">Класс Server.</div><div class="ttdef"><b>Definition:</b> Server.h:24</div></div>
+<div class="ttc" id="aclassServer_html_a004b97c34918dc536d4631671da9817e"><div class="ttname"><a href="classServer.html#a004b97c34918dc536d4631671da9817e">Server::Initialize</a></div><div class="ttdeci">bool Initialize(int argc, char **argv)</div><div class="ttdoc">Инициализация сервера</div></div>
+<div class="ttc" id="aclassServer_html_a7eac07d2582fa01c2671362efa955b31"><div class="ttname"><a href="classServer.html#a7eac07d2582fa01c2671362efa955b31">Server::start</a></div><div class="ttdeci">void start()</div><div class="ttdoc">Запуск сервера</div></div>
+<div class="ttc" id="aclassUsersParser_html"><div class="ttname"><a href="classUsersParser.html">UsersParser</a></div><div class="ttdoc">Класс UsersParser.</div><div class="ttdef"><b>Definition:</b> UsersParser.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

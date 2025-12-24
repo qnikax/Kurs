@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NoKurs: Класс Communication</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">NoKurs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classCommunication-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Communication</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс <a class="el" href="classCommunication.html" title="Класс Communication.">Communication</a>.  
+ <a href="classCommunication.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Communication_8h_source.html">Communication.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ad5015515bde199711daa0cf2923d129a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCommunication.html#ad5015515bde199711daa0cf2923d129a">createSocket</a> (int port)</td></tr>
+<tr class="memdesc:ad5015515bde199711daa0cf2923d129a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создает сокет на указанном порту.  <a href="classCommunication.html#ad5015515bde199711daa0cf2923d129a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad5015515bde199711daa0cf2923d129a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb21030851cef1b43ac8f33ed2852557"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCommunication.html#acb21030851cef1b43ac8f33ed2852557">waitClient</a> ()</td></tr>
+<tr class="memdesc:acb21030851cef1b43ac8f33ed2852557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ожидает подключения клиента и принимает его  <a href="classCommunication.html#acb21030851cef1b43ac8f33ed2852557">Подробнее...</a><br /></td></tr>
+<tr class="separator:acb21030851cef1b43ac8f33ed2852557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada7b0f634f29aa2c64a97726c21f9b02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCommunication.html#ada7b0f634f29aa2c64a97726c21f9b02">autorize</a> (int clientSocket, <a class="el" href="classUsersParser.html">UsersParser</a> users)</td></tr>
+<tr class="memdesc:ada7b0f634f29aa2c64a97726c21f9b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Авторизует клиента, сравнивая его учетные данные с информацией пользователя.  <a href="classCommunication.html#ada7b0f634f29aa2c64a97726c21f9b02">Подробнее...</a><br /></td></tr>
+<tr class="separator:ada7b0f634f29aa2c64a97726c21f9b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс <a class="el" href="classCommunication.html" title="Класс Communication.">Communication</a>. </p>
+<p>Класс <a class="el" href="classCommunication.html" title="Класс Communication.">Communication</a> отвечает за связь между клиентами и сервером. </p><dl class="section warning"><dt>Предупреждения</dt><dd>Реализация только для типа данных int16_t </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a id="ada7b0f634f29aa2c64a97726c21f9b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada7b0f634f29aa2c64a97726c21f9b02">&#9670;&nbsp;</a></span>autorize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communication::autorize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>clientSocket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classUsersParser.html">UsersParser</a>&#160;</td>
+          <td class="paramname"><em>users</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Авторизует клиента, сравнивая его учетные данные с информацией пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clientSocket</td><td>Дескриптор сокета клиента. @paramusers Экземпляр класса <a class="el" href="classUsersParser.html" title="Класс UsersParser.">UsersParser</a>, хранящий информацию о пользователях. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad5015515bde199711daa0cf2923d129a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5015515bde199711daa0cf2923d129a">&#9670;&nbsp;</a></span>createSocket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communication::createSocket </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создает сокет на указанном порту. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>Номер порта, на котором будет создан сокет. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acb21030851cef1b43ac8f33ed2852557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb21030851cef1b43ac8f33ed2852557">&#9670;&nbsp;</a></span>waitClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Communication::waitClient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ожидает подключения клиента и принимает его </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Дескриптор клиентского сокета. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="Communication_8h_source.html">Communication.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

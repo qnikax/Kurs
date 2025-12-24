@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NoKurs: Исходный файл UsersParser.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">NoKurs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">UsersParser.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="UsersParser_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __USERSPARSER_H__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __USERSPARSER_H__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classUsersParser.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classUsersParser.html">UsersParser</a>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classUsersParser.html#a0995885a61a8bf297b29b9f0847e3023">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classUsersParser.html#a0995885a61a8bf297b29b9f0847e3023">parse</a>(std::string pathToFile);</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classUsersParser.html#a9ba98551c3f0b5af940eaf5083f1e403">   35</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classUsersParser.html#a9ba98551c3f0b5af940eaf5083f1e403">isHasUser</a>(std::string username);</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classUsersParser.html#a9d59e4065b1bed9b5d42f7930baa0c48">   42</a></span>&#160;    std::string <a class="code" href="classUsersParser.html#a9d59e4065b1bed9b5d42f7930baa0c48">getPassword</a>(std::string username);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::unordered_map&lt;std::string,std::string&gt; m_users;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __USERSPARSER_H__</span></div>
+<div class="ttc" id="aclassUsersParser_html"><div class="ttname"><a href="classUsersParser.html">UsersParser</a></div><div class="ttdoc">Класс UsersParser.</div><div class="ttdef"><b>Definition:</b> UsersParser.h:20</div></div>
+<div class="ttc" id="aclassUsersParser_html_a0995885a61a8bf297b29b9f0847e3023"><div class="ttname"><a href="classUsersParser.html#a0995885a61a8bf297b29b9f0847e3023">UsersParser::parse</a></div><div class="ttdeci">void parse(std::string pathToFile)</div><div class="ttdoc">Разберите файл и сохраните информацию о пользователе в хеш-карте.</div></div>
+<div class="ttc" id="aclassUsersParser_html_a9ba98551c3f0b5af940eaf5083f1e403"><div class="ttname"><a href="classUsersParser.html#a9ba98551c3f0b5af940eaf5083f1e403">UsersParser::isHasUser</a></div><div class="ttdeci">bool isHasUser(std::string username)</div><div class="ttdoc">Проверить, существует ли пользователь с указанным именем пользователя</div></div>
+<div class="ttc" id="aclassUsersParser_html_a9d59e4065b1bed9b5d42f7930baa0c48"><div class="ttname"><a href="classUsersParser.html#a9d59e4065b1bed9b5d42f7930baa0c48">UsersParser::getPassword</a></div><div class="ttdeci">std::string getPassword(std::string username)</div><div class="ttdoc">Получить пароль пользователя с указанным именем пользователя</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

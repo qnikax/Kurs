@@ -1,0 +1,117 @@
+\hypertarget{classLogger}{}\doxysection{Класс Logger}
+\label{classLogger}\index{Logger@{Logger}}
+
+
+Класс \mbox{\hyperlink{classLogger}{Logger}}.  
+
+
+
+
+{\ttfamily \#include $<$Logger.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classLogger_a8cd66cee165475db05e779dc5c555387}{Initialize}} (std\+::string log\+Path)
+\begin{DoxyCompactList}\small\item\em Инициализирует регистратор с указанным путем к журналу. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLogger_a18a692118bc6312565064c0fdc807b67}{info}} (std\+::string str)
+\begin{DoxyCompactList}\small\item\em Регистрирует информационное сообщение. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLogger_a959842e7720e4ed838b8700ae1de8bb1}{server\+Error}} (\mbox{\hyperlink{classServerError}{Server\+Error}} server\+Error)
+\begin{DoxyCompactList}\small\item\em Регистрирует ошибку сервера. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classLogger}{Logger}} \& \mbox{\hyperlink{classLogger_a6b82e3118a6f29c899e51e9a038dae75}{get}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает ссылку на одноэлементный экземпляр средства ведения журнала. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classLogger}{Logger}} $\ast$ \mbox{\hyperlink{classLogger_a70af8ed6201d4677d00a26ec3b0321a4}{get\+Ptr}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает указатель на одноэлементный экземпляр средства ведения журнала. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \mbox{\hyperlink{classLogger}{Logger}}. 
+
+Класс \mbox{\hyperlink{classLogger}{Logger}} отвечает за регистрацию информации и ошибок сервера. \begin{DoxyWarning}{Предупреждения}
+Реализация только для типа данных int16\+\_\+t 
+\end{DoxyWarning}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classLogger_a6b82e3118a6f29c899e51e9a038dae75}\label{classLogger_a6b82e3118a6f29c899e51e9a038dae75}} 
+\index{Logger@{Logger}!get@{get}}
+\index{get@{get}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classLogger}{Logger}}\& Logger\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Возвращает ссылку на одноэлементный экземпляр средства ведения журнала. 
+
+\begin{DoxyReturn}{Возвращает}
+Ссылка на экземпляр регистратора 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLogger_a70af8ed6201d4677d00a26ec3b0321a4}\label{classLogger_a70af8ed6201d4677d00a26ec3b0321a4}} 
+\index{Logger@{Logger}!getPtr@{getPtr}}
+\index{getPtr@{getPtr}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{getPtr()}{getPtr()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classLogger}{Logger}}$\ast$ Logger\+::get\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Возвращает указатель на одноэлементный экземпляр средства ведения журнала. 
+
+\begin{DoxyReturn}{Возвращает}
+Указатель на экземпляр регистратора 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLogger_a18a692118bc6312565064c0fdc807b67}\label{classLogger_a18a692118bc6312565064c0fdc807b67}} 
+\index{Logger@{Logger}!info@{info}}
+\index{info@{info}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily void Logger\+::info (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+
+
+
+Регистрирует информационное сообщение. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em str} & Информационное сообщение, которое необходимо записать в журнал. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLogger_a8cd66cee165475db05e779dc5c555387}\label{classLogger_a8cd66cee165475db05e779dc5c555387}} 
+\index{Logger@{Logger}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily bool Logger\+::\+Initialize (\begin{DoxyParamCaption}\item[{std\+::string}]{log\+Path }\end{DoxyParamCaption})}
+
+
+
+Инициализирует регистратор с указанным путем к журналу. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em log\+Path} & Путь к файлу журнала. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+True, если регистратор успешно инициализирован, в противном случае — false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLogger_a959842e7720e4ed838b8700ae1de8bb1}\label{classLogger_a959842e7720e4ed838b8700ae1de8bb1}} 
+\index{Logger@{Logger}!serverError@{serverError}}
+\index{serverError@{serverError}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{serverError()}{serverError()}}
+{\footnotesize\ttfamily void Logger\+::server\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classServerError}{Server\+Error}}}]{server\+Error }\end{DoxyParamCaption})}
+
+
+
+Регистрирует ошибку сервера. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em server\+Error} & Ошибка сервера, которая должна быть зарегистрирована. \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Logger_8h}{Logger.\+h}}\end{DoxyCompactItemize}

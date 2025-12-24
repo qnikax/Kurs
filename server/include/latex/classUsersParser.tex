@@ -1,0 +1,87 @@
+\hypertarget{classUsersParser}{}\doxysection{Класс Users\+Parser}
+\label{classUsersParser}\index{UsersParser@{UsersParser}}
+
+
+Класс \mbox{\hyperlink{classUsersParser}{Users\+Parser}}.  
+
+
+
+
+{\ttfamily \#include $<$Users\+Parser.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classUsersParser_a0995885a61a8bf297b29b9f0847e3023}{parse}} (std\+::string path\+To\+File)
+\begin{DoxyCompactList}\small\item\em Разберите файл и сохраните информацию о пользователе в хеш-\/карте. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUsersParser_a9ba98551c3f0b5af940eaf5083f1e403}{is\+Has\+User}} (std\+::string username)
+\begin{DoxyCompactList}\small\item\em Проверить, существует ли пользователь с указанным именем пользователя \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUsersParser_a9d59e4065b1bed9b5d42f7930baa0c48}{get\+Password}} (std\+::string username)
+\begin{DoxyCompactList}\small\item\em Получить пароль пользователя с указанным именем пользователя \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \mbox{\hyperlink{classUsersParser}{Users\+Parser}}. 
+
+Класс \mbox{\hyperlink{classUsersParser}{Users\+Parser}} анализирует файл, содержащий информацию о пользователе. \begin{DoxyWarning}{Предупреждения}
+Реализация только для типа данных int16\+\_\+t 
+\end{DoxyWarning}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classUsersParser_a9d59e4065b1bed9b5d42f7930baa0c48}\label{classUsersParser_a9d59e4065b1bed9b5d42f7930baa0c48}} 
+\index{UsersParser@{UsersParser}!getPassword@{getPassword}}
+\index{getPassword@{getPassword}!UsersParser@{UsersParser}}
+\doxysubsubsection{\texorpdfstring{getPassword()}{getPassword()}}
+{\footnotesize\ttfamily std\+::string Users\+Parser\+::get\+Password (\begin{DoxyParamCaption}\item[{std\+::string}]{username }\end{DoxyParamCaption})}
+
+
+
+Получить пароль пользователя с указанным именем пользователя 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em username} & Имя пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Пароль пользователя 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUsersParser_a9ba98551c3f0b5af940eaf5083f1e403}\label{classUsersParser_a9ba98551c3f0b5af940eaf5083f1e403}} 
+\index{UsersParser@{UsersParser}!isHasUser@{isHasUser}}
+\index{isHasUser@{isHasUser}!UsersParser@{UsersParser}}
+\doxysubsubsection{\texorpdfstring{isHasUser()}{isHasUser()}}
+{\footnotesize\ttfamily bool Users\+Parser\+::is\+Has\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{username }\end{DoxyParamCaption})}
+
+
+
+Проверить, существует ли пользователь с указанным именем пользователя 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em username} & Имя пользователя, которого нужно проверить. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если пользователь существует, в противном случае — false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUsersParser_a0995885a61a8bf297b29b9f0847e3023}\label{classUsersParser_a0995885a61a8bf297b29b9f0847e3023}} 
+\index{UsersParser@{UsersParser}!parse@{parse}}
+\index{parse@{parse}!UsersParser@{UsersParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily void Users\+Parser\+::parse (\begin{DoxyParamCaption}\item[{std\+::string}]{path\+To\+File }\end{DoxyParamCaption})}
+
+
+
+Разберите файл и сохраните информацию о пользователе в хеш-\/карте. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em path\+To\+File} & Путь к файлу, который нужно проанализировать. \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{UsersParser_8h}{Users\+Parser.\+h}}\end{DoxyCompactItemize}

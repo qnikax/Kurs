@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NoKurs: Исходный файл CmdLine.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">NoKurs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">CmdLine.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="CmdLine_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __CMDLINE_H__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __CMDLINE_H__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="CmdLine_8h.html#a448f647fca8391a8e5ce382ab398474e">   28</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="CmdLine_8h.html#a448f647fca8391a8e5ce382ab398474e">param_type</a>{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    string,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    integer,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classCmdLine.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCmdLine.html">CmdLine</a>{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">struct </span>param{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        std::string name;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        std::string shortName;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::string valStr;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::string description;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="CmdLine_8h.html#a448f647fca8391a8e5ce382ab398474e">param_type</a> type;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">int</span> valInt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    };</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classCmdLine.html#acf3863516430b8a6d2c2c939fc06bb35">   57</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCmdLine.html#acf3863516430b8a6d2c2c939fc06bb35">addParam</a>(std::string name, std::string shortName,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                  std::string description = std::string(),<a class="code" href="CmdLine_8h.html#a448f647fca8391a8e5ce382ab398474e">param_type</a> type = param_type::string);</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classCmdLine.html#ae768e933183ab6cb0b22acb346d68e92">   64</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCmdLine.html#ae768e933183ab6cb0b22acb346d68e92">parse</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv);</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classCmdLine.html#a2aac1e6e174b0106b25af653e86f74cc">   68</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCmdLine.html#a2aac1e6e174b0106b25af653e86f74cc">printHelp</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classCmdLine.html#ac446667e98fe7cfbf4ab8d17a8b8b631">   74</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classCmdLine.html#ac446667e98fe7cfbf4ab8d17a8b8b631">getInt</a>(std::string name);</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classCmdLine.html#a2f21ee6d5f5805932ed11c2848f02c14">   80</a></span>&#160;    std::string <a class="code" href="classCmdLine.html#a2f21ee6d5f5805932ed11c2848f02c14">getString</a>(std::string name);</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classCmdLine.html#a7d558b1f49457b1267891ddd0910ee16">   85</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCmdLine.html#a7d558b1f49457b1267891ddd0910ee16">isHasHelp</a>(){<span class="keywordflow">return</span> m_isHasHelp;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    std::string getNextArg(<span class="keywordtype">int</span> argc,<span class="keywordtype">char</span>** argv);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">bool</span> isHasParam(std::string name);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">bool</span> isHasParamShort(std::string name);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">bool</span> isnumber(std::string str);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> modifyParam(param parameter, std::string curArg);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::unordered_map&lt;std::string,param&gt; m_params;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    std::unordered_map&lt;std::string,param&gt; m_paramsShort;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">int</span> m_curArgIndx = 1;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">bool</span> m_isHasHelp = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;};</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __CMDLINE_H__</span></div>
+<div class="ttc" id="aCmdLine_8h_html_a448f647fca8391a8e5ce382ab398474e"><div class="ttname"><a href="CmdLine_8h.html#a448f647fca8391a8e5ce382ab398474e">param_type</a></div><div class="ttdeci">param_type</div><div class="ttdoc">Класс CmdLine.</div><div class="ttdef"><b>Definition:</b> CmdLine.h:28</div></div>
+<div class="ttc" id="aclassCmdLine_html"><div class="ttname"><a href="classCmdLine.html">CmdLine</a></div><div class="ttdef"><b>Definition:</b> CmdLine.h:33</div></div>
+<div class="ttc" id="aclassCmdLine_html_a2aac1e6e174b0106b25af653e86f74cc"><div class="ttname"><a href="classCmdLine.html#a2aac1e6e174b0106b25af653e86f74cc">CmdLine::printHelp</a></div><div class="ttdeci">void printHelp()</div><div class="ttdoc">Выводит справочное сообщение.</div></div>
+<div class="ttc" id="aclassCmdLine_html_a2f21ee6d5f5805932ed11c2848f02c14"><div class="ttname"><a href="classCmdLine.html#a2f21ee6d5f5805932ed11c2848f02c14">CmdLine::getString</a></div><div class="ttdeci">std::string getString(std::string name)</div><div class="ttdoc">Возвращает строковое значение указанного параметра.</div></div>
+<div class="ttc" id="aclassCmdLine_html_a7d558b1f49457b1267891ddd0910ee16"><div class="ttname"><a href="classCmdLine.html#a7d558b1f49457b1267891ddd0910ee16">CmdLine::isHasHelp</a></div><div class="ttdeci">bool isHasHelp()</div><div class="ttdoc">Проверяет, присутствует ли опция «–help» или «-h».</div><div class="ttdef"><b>Definition:</b> CmdLine.h:85</div></div>
+<div class="ttc" id="aclassCmdLine_html_ac446667e98fe7cfbf4ab8d17a8b8b631"><div class="ttname"><a href="classCmdLine.html#ac446667e98fe7cfbf4ab8d17a8b8b631">CmdLine::getInt</a></div><div class="ttdeci">int getInt(std::string name)</div><div class="ttdoc">Возвращает целочисленное значение указанного параметра.</div></div>
+<div class="ttc" id="aclassCmdLine_html_acf3863516430b8a6d2c2c939fc06bb35"><div class="ttname"><a href="classCmdLine.html#acf3863516430b8a6d2c2c939fc06bb35">CmdLine::addParam</a></div><div class="ttdeci">void addParam(std::string name, std::string shortName, std::string description=std::string(), param_type type=param_type::string)</div><div class="ttdoc">Добавляет параметр к объекту CmdLine.</div></div>
+<div class="ttc" id="aclassCmdLine_html_ae768e933183ab6cb0b22acb346d68e92"><div class="ttname"><a href="classCmdLine.html#ae768e933183ab6cb0b22acb346d68e92">CmdLine::parse</a></div><div class="ttdeci">void parse(int argc, char **argv)</div><div class="ttdoc">Анализирует аргументы командной строки.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

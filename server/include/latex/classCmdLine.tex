@@ -1,0 +1,113 @@
+\hypertarget{classCmdLine}{}\doxysection{Класс Cmd\+Line}
+\label{classCmdLine}\index{CmdLine@{CmdLine}}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCmdLine_acf3863516430b8a6d2c2c939fc06bb35}{add\+Param}} (std\+::string name, std\+::string short\+Name, std\+::string description=std\+::string(), \mbox{\hyperlink{CmdLine_8h_a448f647fca8391a8e5ce382ab398474e}{param\+\_\+type}} type=param\+\_\+type\+::string)
+\begin{DoxyCompactList}\small\item\em Добавляет параметр к объекту \mbox{\hyperlink{classCmdLine}{Cmd\+Line}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCmdLine_ae768e933183ab6cb0b22acb346d68e92}{parse}} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Анализирует аргументы командной строки. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCmdLine_a2aac1e6e174b0106b25af653e86f74cc}\label{classCmdLine_a2aac1e6e174b0106b25af653e86f74cc}} 
+void \mbox{\hyperlink{classCmdLine_a2aac1e6e174b0106b25af653e86f74cc}{print\+Help}} ()
+\begin{DoxyCompactList}\small\item\em Выводит справочное сообщение. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCmdLine_ac446667e98fe7cfbf4ab8d17a8b8b631}{get\+Int}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Возвращает целочисленное значение указанного параметра. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCmdLine_a2f21ee6d5f5805932ed11c2848f02c14}{get\+String}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Возвращает строковое значение указанного параметра. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCmdLine_a7d558b1f49457b1267891ddd0910ee16}{is\+Has\+Help}} ()
+\begin{DoxyCompactList}\small\item\em Проверяет, присутствует ли опция «--help» или «-\/h». \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classCmdLine_acf3863516430b8a6d2c2c939fc06bb35}\label{classCmdLine_acf3863516430b8a6d2c2c939fc06bb35}} 
+\index{CmdLine@{CmdLine}!addParam@{addParam}}
+\index{addParam@{addParam}!CmdLine@{CmdLine}}
+\doxysubsubsection{\texorpdfstring{addParam()}{addParam()}}
+{\footnotesize\ttfamily void Cmd\+Line\+::add\+Param (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{short\+Name,  }\item[{std\+::string}]{description = {\ttfamily std\+:\+:string()},  }\item[{\mbox{\hyperlink{CmdLine_8h_a448f647fca8391a8e5ce382ab398474e}{param\+\_\+type}}}]{type = {\ttfamily param\+\_\+type\+:\+:string} }\end{DoxyParamCaption})}
+
+
+
+Добавляет параметр к объекту \mbox{\hyperlink{classCmdLine}{Cmd\+Line}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя параметра. \\
+\hline
+{\em short\+Name} & Краткое имя (один символ) параметра. \\
+\hline
+{\em описание} & Описание параметра. \\
+\hline
+{\em type} & Тип параметра. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCmdLine_ac446667e98fe7cfbf4ab8d17a8b8b631}\label{classCmdLine_ac446667e98fe7cfbf4ab8d17a8b8b631}} 
+\index{CmdLine@{CmdLine}!getInt@{getInt}}
+\index{getInt@{getInt}!CmdLine@{CmdLine}}
+\doxysubsubsection{\texorpdfstring{getInt()}{getInt()}}
+{\footnotesize\ttfamily int Cmd\+Line\+::get\+Int (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Возвращает целочисленное значение указанного параметра. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя параметра. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Целочисленное значение параметра. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCmdLine_a2f21ee6d5f5805932ed11c2848f02c14}\label{classCmdLine_a2f21ee6d5f5805932ed11c2848f02c14}} 
+\index{CmdLine@{CmdLine}!getString@{getString}}
+\index{getString@{getString}!CmdLine@{CmdLine}}
+\doxysubsubsection{\texorpdfstring{getString()}{getString()}}
+{\footnotesize\ttfamily std\+::string Cmd\+Line\+::get\+String (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Возвращает строковое значение указанного параметра. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя параметра. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Строковое значение параметра. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCmdLine_a7d558b1f49457b1267891ddd0910ee16}\label{classCmdLine_a7d558b1f49457b1267891ddd0910ee16}} 
+\index{CmdLine@{CmdLine}!isHasHelp@{isHasHelp}}
+\index{isHasHelp@{isHasHelp}!CmdLine@{CmdLine}}
+\doxysubsubsection{\texorpdfstring{isHasHelp()}{isHasHelp()}}
+{\footnotesize\ttfamily bool Cmd\+Line\+::is\+Has\+Help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Проверяет, присутствует ли опция «--help» или «-\/h». 
+
+\begin{DoxyReturn}{Возвращает}
+True, если присутствует опция справки, в противном случае — false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCmdLine_ae768e933183ab6cb0b22acb346d68e92}\label{classCmdLine_ae768e933183ab6cb0b22acb346d68e92}} 
+\index{CmdLine@{CmdLine}!parse@{parse}}
+\index{parse@{parse}!CmdLine@{CmdLine}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily void Cmd\+Line\+::parse (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Анализирует аргументы командной строки. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em argc} & Количество аргументов командной строки. \\
+\hline
+{\em argv} & Массив строк аргументов командной строки. \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{CmdLine_8h}{Cmd\+Line.\+h}}\end{DoxyCompactItemize}
