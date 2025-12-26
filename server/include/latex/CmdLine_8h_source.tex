@@ -1,0 +1,51 @@
+\hypertarget{CmdLine_8h_source}{}\doxysection{Cmd\+Line.\+h}
+\mbox{\hyperlink{CmdLine_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_CMDLINE\_H\_\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_CMDLINE\_H\_\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <unordered\_map>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{28 \textcolor{keyword}{enum} \mbox{\hyperlink{CmdLine_8h_a448f647fca8391a8e5ce382ab398474e}{param\_type}}\{}
+\DoxyCodeLine{29     string,}
+\DoxyCodeLine{30     integer,}
+\DoxyCodeLine{31 \};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{keyword}{class }\mbox{\hyperlink{classCmdLine}{CmdLine}}\{}
+\DoxyCodeLine{39     \textcolor{keyword}{struct }param\{}
+\DoxyCodeLine{40         std::string name;}
+\DoxyCodeLine{41         std::string shortName;}
+\DoxyCodeLine{42         std::string valStr;}
+\DoxyCodeLine{43         std::string description;}
+\DoxyCodeLine{44         }
+\DoxyCodeLine{45         \mbox{\hyperlink{CmdLine_8h_a448f647fca8391a8e5ce382ab398474e}{param\_type}} type;}
+\DoxyCodeLine{46         \textcolor{keywordtype}{int} valInt;}
+\DoxyCodeLine{47     \};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \textcolor{keyword}{public}:}
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{classCmdLine_acf3863516430b8a6d2c2c939fc06bb35}{addParam}}(std::string name, std::string shortName,}
+\DoxyCodeLine{58                   std::string description = std::string(),\mbox{\hyperlink{CmdLine_8h_a448f647fca8391a8e5ce382ab398474e}{param\_type}} type = param\_type::string);}
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} \mbox{\hyperlink{classCmdLine_ae768e933183ab6cb0b22acb346d68e92}{parse}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char}** argv);}
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} \mbox{\hyperlink{classCmdLine_a2aac1e6e174b0106b25af653e86f74cc}{printHelp}}();}
+\DoxyCodeLine{74     \textcolor{keywordtype}{int} \mbox{\hyperlink{classCmdLine_ac446667e98fe7cfbf4ab8d17a8b8b631}{getInt}}(std::string name);}
+\DoxyCodeLine{80     std::string \mbox{\hyperlink{classCmdLine_a2f21ee6d5f5805932ed11c2848f02c14}{getString}}(std::string name);}
+\DoxyCodeLine{85     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classCmdLine_a7d558b1f49457b1267891ddd0910ee16}{isHasHelp}}()\{\textcolor{keywordflow}{return} m\_isHasHelp;\}}
+\DoxyCodeLine{86 \textcolor{keyword}{private}:}
+\DoxyCodeLine{93     std::string getNextArg(\textcolor{keywordtype}{int} argc,\textcolor{keywordtype}{char}** argv);}
+\DoxyCodeLine{99     \textcolor{keywordtype}{bool} isHasParam(std::string name);}
+\DoxyCodeLine{105     \textcolor{keywordtype}{bool} isHasParamShort(std::string name);}
+\DoxyCodeLine{111     \textcolor{keywordtype}{bool} isnumber(std::string str);}
+\DoxyCodeLine{117     \textcolor{keywordtype}{void} modifyParam(param\& parameter, std::string curArg);}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119     std::unordered\_map<std::string,param> m\_params;}
+\DoxyCodeLine{120     std::unordered\_map<std::string,param> m\_paramsShort;}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123     \textcolor{keywordtype}{int} m\_curArgIndx = 1;}
+\DoxyCodeLine{124     \textcolor{keywordtype}{bool} m\_isHasHelp = \textcolor{keyword}{false};}
+\DoxyCodeLine{125 \};}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \_\_CMDLINE\_H\_\_}}
+
+\end{DoxyCode}

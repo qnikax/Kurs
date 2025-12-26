@@ -13,3 +13,21 @@
 2025-12-2413:54:24<INFO> :Initialization succsessfull
 2025-12-2414:00:23<INFO> :Initialization succsessfull
 2025-12-24 23:08:33 <INFO> : Initialization successful
+2025-12-26 16:26:35 <INFO> : Initialization successful
+2025-12-26 16:44:11 <WARNING> : Vector size too large
+2025-12-26 16:57:23 <CRITICAL> : socket creation failure
+2025-12-26 16:57:42 <CRITICAL> : socket creation failure
+2025-12-26 16:59:26 <INFO> : Initialization successful
+2025-12-26 17:01:49 <CRITICAL> : socket creation failure
+2025-12-26 17:08:08 <INFO> : Initialization successful
+2025-12-26 17:20:56 <CRITICAL> : socket creation failure
+2025-12-26 17:21:07 <CRITICAL> : socket creation failure
+2025-12-26 17:21:34 <CRITICAL> : socket creation failure
+2025-12-26 17:21:52 <INFO> : Initialization successful
+2025-12-26 17:26:29 <CRITICAL> : socket creation failure
+2025-12-26 17:27:22 <CRITICAL> : socket creation failure
+2025-12-26 17:27:24 <INFO> : Initialization successful
+2025-12-26 17:42:28 <INFO> : Initialization successful
+2025-12-26 17:43:24 <WARNING> : users file is empty
+2025-12-26 17:46:50 <INFO> : Initialization successful
+2025-12-26 17:46:55 <WARNING> : User doesn't exists

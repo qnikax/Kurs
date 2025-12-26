@@ -48,9 +48,9 @@
 \indexentry{CmdLine.h@{CmdLine.h}!param\_type@{param\_type}|hyperpage}{20}
 \indexentry{param\_type@{param\_type}!CmdLine.h@{CmdLine.h}|hyperpage}{20}
 \indexentry{Communication.h@{Communication.h}|hyperpage}{21}
-\indexentry{Logger.h@{Logger.h}|hyperpage}{22}
-\indexentry{Server.h@{Server.h}|hyperpage}{24}
-\indexentry{ServerError.h@{ServerError.h}|hyperpage}{25}
-\indexentry{ServerError.h@{ServerError.h}!ErrorLevel@{ErrorLevel}|hyperpage}{26}
-\indexentry{ErrorLevel@{ErrorLevel}!ServerError.h@{ServerError.h}|hyperpage}{26}
-\indexentry{UsersParser.h@{UsersParser.h}|hyperpage}{27}
+\indexentry{Logger.h@{Logger.h}|hyperpage}{23}
+\indexentry{Server.h@{Server.h}|hyperpage}{25}
+\indexentry{ServerError.h@{ServerError.h}|hyperpage}{27}
+\indexentry{ServerError.h@{ServerError.h}!ErrorLevel@{ErrorLevel}|hyperpage}{28}
+\indexentry{ErrorLevel@{ErrorLevel}!ServerError.h@{ServerError.h}|hyperpage}{28}
+\indexentry{UsersParser.h@{UsersParser.h}|hyperpage}{29}

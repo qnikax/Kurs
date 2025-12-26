@@ -1,0 +1,26 @@
+\hypertarget{Logger_8h_source}{}\doxysection{Logger.\+h}
+\mbox{\hyperlink{Logger_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_LOGGER\_H\_\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_LOGGER\_H\_\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ServerError_8h}{ServerError.h}}"{}}}
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{classLogger}{Logger}}\{}
+\DoxyCodeLine{23     \textcolor{keyword}{public}:}
+\DoxyCodeLine{29         \textcolor{keywordtype}{bool} \mbox{\hyperlink{classLogger_a8cd66cee165475db05e779dc5c555387}{Initialize}}(std::string logPath);}
+\DoxyCodeLine{34         \textcolor{keywordtype}{void} \mbox{\hyperlink{classLogger_a18a692118bc6312565064c0fdc807b67}{info}}(std::string str);}
+\DoxyCodeLine{39         \textcolor{keywordtype}{void} \mbox{\hyperlink{classLogger_a959842e7720e4ed838b8700ae1de8bb1}{serverError}}(\mbox{\hyperlink{classServerError}{ServerError}} \mbox{\hyperlink{classLogger_a959842e7720e4ed838b8700ae1de8bb1}{serverError}});}
+\DoxyCodeLine{44         \textcolor{keyword}{static} \mbox{\hyperlink{classLogger}{Logger}} \&\mbox{\hyperlink{classLogger_ab3b5dc051b86e83c921a59d0a622bf71}{get}}();}
+\DoxyCodeLine{49         \textcolor{keyword}{static} \mbox{\hyperlink{classLogger}{Logger}} *\mbox{\hyperlink{classLogger_a16b1584a4130fe967f2da11bbe784deb}{getPtr}}();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{keyword}{private}:}
+\DoxyCodeLine{52         \textcolor{keyword}{static} \mbox{\hyperlink{classLogger}{Logger}}* m\_state;}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54         std::string m\_pathToFile;}
+\DoxyCodeLine{55         std::ofstream m\_logFile;}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \_\_LOGGER\_H\_\_}}
+
+\end{DoxyCode}

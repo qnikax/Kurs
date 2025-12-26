@@ -1,0 +1,23 @@
+\hypertarget{UsersParser_8h_source}{}\doxysection{Users\+Parser.\+h}
+\mbox{\hyperlink{UsersParser_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_USERSPARSER\_H\_\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_USERSPARSER\_H\_\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <unordered\_map>}}
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{classUsersParser}{UsersParser}}\{}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} \mbox{\hyperlink{classUsersParser_a0995885a61a8bf297b29b9f0847e3023}{parse}}(std::string pathToFile);}
+\DoxyCodeLine{35     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classUsersParser_a9ba98551c3f0b5af940eaf5083f1e403}{isHasUser}}(std::string username);}
+\DoxyCodeLine{42     std::string \mbox{\hyperlink{classUsersParser_a9d59e4065b1bed9b5d42f7930baa0c48}{getPassword}}(std::string username);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{keyword}{private}:}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     std::unordered\_map<std::string,std::string> m\_users;}
+\DoxyCodeLine{47 \};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \_\_USERSPARSER\_H\_\_}}
+
+\end{DoxyCode}

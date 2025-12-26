@@ -1,0 +1,31 @@
+\hypertarget{ServerError_8h_source}{}\doxysection{Server\+Error.\+h}
+\mbox{\hyperlink{ServerError_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_SERVERERROR\_H\_\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_SERVERERROR\_H\_\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <stdexcept>}}
+\DoxyCodeLine{19 \textcolor{keyword}{enum} \mbox{\hyperlink{ServerError_8h_a88f6d947bf467e369055535af5907aa1}{ErrorLevel}}}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21     Warning,}
+\DoxyCodeLine{22     Critical}
+\DoxyCodeLine{23 \};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{class }\mbox{\hyperlink{classServerError}{ServerError}} : \textcolor{keyword}{public} std::runtime\_error}
+\DoxyCodeLine{26 \{}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{public}:}
+\DoxyCodeLine{32     \mbox{\hyperlink{classServerError_af4a0415a42df50fcc6b48e0da37b16d6}{ServerError}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *msg) : std::runtime\_error(msg)\{\};}
+\DoxyCodeLine{37     \mbox{\hyperlink{classServerError_a5c2dca23eade8390da97eb981fb659a4}{ServerError}}(\textcolor{keyword}{const} std::string \&msg, \mbox{\hyperlink{ServerError_8h_a88f6d947bf467e369055535af5907aa1}{ErrorLevel}} level = ErrorLevel::Warning) : std::runtime\_error(msg),}
+\DoxyCodeLine{38                                                             m\_errorLevel(level)\{}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40                                                             \};}
+\DoxyCodeLine{44     \mbox{\hyperlink{ServerError_8h_a88f6d947bf467e369055535af5907aa1}{ErrorLevel}} \mbox{\hyperlink{classServerError_ad505988596ac05d433339dfd9177b93b}{getErrorLevel}}() \{\textcolor{keywordflow}{return} m\_errorLevel;\}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{keyword}{private}:}
+\DoxyCodeLine{47     \mbox{\hyperlink{ServerError_8h_a88f6d947bf467e369055535af5907aa1}{ErrorLevel}} m\_errorLevel;}
+\DoxyCodeLine{48 \};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \_\_SERVERERROR\_H\_\_}}
+
+\end{DoxyCode}

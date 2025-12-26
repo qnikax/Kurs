@@ -26,7 +26,7 @@
   \indexspace
 
   \item {ErrorLevel}
-    \subitem {ServerError.h}, \hyperpage{26}
+    \subitem {ServerError.h}, \hyperpage{28}
 
   \indexspace
 
@@ -63,7 +63,7 @@
     \subitem {info}, \hyperpage{12}
     \subitem {Initialize}, \hyperpage{12}
     \subitem {serverError}, \hyperpage{12}
-  \item {Logger.h}, \hyperpage{22}
+  \item {Logger.h}, \hyperpage{23}
 
   \indexspace
 
@@ -77,14 +77,14 @@
 
   \item {Server}, \hyperpage{13}
     \subitem {Initialize}, \hyperpage{13}
-  \item {Server.h}, \hyperpage{24}
+  \item {Server.h}, \hyperpage{25}
   \item {ServerError}, \hyperpage{14}
     \subitem {getErrorLevel}, \hyperpage{15}
     \subitem {ServerError}, \hyperpage{15}
   \item {serverError}
     \subitem {Logger}, \hyperpage{12}
-  \item {ServerError.h}, \hyperpage{25}
-    \subitem {ErrorLevel}, \hyperpage{26}
+  \item {ServerError.h}, \hyperpage{27}
+    \subitem {ErrorLevel}, \hyperpage{28}
 
   \indexspace
 
@@ -92,7 +92,7 @@
     \subitem {getPassword}, \hyperpage{16}
     \subitem {isHasUser}, \hyperpage{17}
     \subitem {parse}, \hyperpage{17}
-  \item {UsersParser.h}, \hyperpage{27}
+  \item {UsersParser.h}, \hyperpage{29}
 
   \indexspace
 

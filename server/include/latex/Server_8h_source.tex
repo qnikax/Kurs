@@ -1,0 +1,29 @@
+\hypertarget{Server_8h_source}{}\doxysection{Server.\+h}
+\mbox{\hyperlink{Server_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_SERVER\_H\_\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_SERVER\_H\_\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ServerError_8h}{ServerError.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{CmdLine_8h}{CmdLine.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Logger_8h}{Logger.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Communication_8h}{Communication.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{UsersParser_8h}{UsersParser.h}}"{}}}
+\DoxyCodeLine{24 \textcolor{keyword}{class }\mbox{\hyperlink{classServer}{Server}}\{}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{public}:}
+\DoxyCodeLine{33     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classServer_a004b97c34918dc536d4631671da9817e}{Initialize}}(\textcolor{keywordtype}{int} argc,\textcolor{keywordtype}{char}** argv);}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{classServer_a7eac07d2582fa01c2671362efa955b31}{start}}();}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{keyword}{private}:}
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} executeCalculations(\textcolor{keywordtype}{int} client);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \mbox{\hyperlink{classCmdLine}{CmdLine}} m\_cmd;}
+\DoxyCodeLine{47     \mbox{\hyperlink{classUsersParser}{UsersParser}} m\_usersParser;}
+\DoxyCodeLine{48     \mbox{\hyperlink{classCommunication}{Communication}} m\_com;}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50     \textcolor{keywordtype}{bool} m\_mustDie = \textcolor{keyword}{false};}
+\DoxyCodeLine{51 \};}
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \_\_SERVER\_H\_\_}}
+
+\end{DoxyCode}

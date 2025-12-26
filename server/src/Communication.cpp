@@ -78,7 +78,7 @@ void Communication::autorize(int clientSocket,UsersParser users){
 
     packetSize = recv(clientSocket,messageBuffer,sizeof(messageBuffer),0);
 
-    if(memcmp(digest.data(),messageBuffer,digest.length())){
+    if(memcmp(digest.data(),messageBuffer,digest.length())!=0){
         send(clientSocket,"ERR",3,0);  
         throw ServerError("Invalid password",ErrorLevel::Warning);
     }
